@@ -1,10 +1,10 @@
-### __title__.
+### ((TITLE)).
 
 - - -
 
 # About the project:
 
-* The project was created by Yaron Koresh <aharonkoresh1@gmail.com>
+* The project was created by ((OWNER)).
 
 * This project is licensed under the MIT open-source license.
 
@@ -12,27 +12,27 @@
 
 # What it does?
 
-* __features__
+* ((FEATURES)).
 
 - - -
 
 # Basic installation:
 
-* __installation__
+* ((INSTALLATION)).
 
 - - -
 
 # Basic usage:
 
-* __usage__
+* ((USAGE)).
 
 - - -
 
 # Do you need help?
 
-* Before asking general support questions, please make sure you are using the [latest version](https://github.com/YaronKoresh/__repo__/releases/latest).
+* Before asking general support questions, please make sure you are using the [latest version](https://github.com/YaronKoresh/((REPO))/releases/latest).
 
-* When looking for support, please first search for your question in [open or closed issues](https://github.com/YaronKoresh/__issues__/issues?q=is%3Aissue).
+* When looking for support, please first search for your question in [open or closed issues](https://github.com/YaronKoresh/((REPO))/issues?q=is%3Aissue).
 
 * GitHub issues are a good way for tracking enhancements and bugs, but also for get some help.
 
@@ -40,4 +40,4 @@
 
 - - -
 
-Enjoy :)
+**Enjoy :)**
