@@ -47,7 +47,3 @@ body:
     attributes:
       label: Proposed Solution (Optional)
       description: If you have a suggestion for how to fix the issue or implement your improvement, please share it here. This could include suggested wording, additional information to include, or alternative explanations.
-  - type: textarea
-    attributes:
-      label: Context (Optional)
-      description: Provide any additional context that might be helpful in understanding the issue. For example, what were you trying to do when you encountered the problem? What was your level of familiarity with the topic?
