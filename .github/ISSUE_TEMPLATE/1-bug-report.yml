@@ -22,58 +22,34 @@ body:
       description: What operating system and version are you using? (e.g., `Windows 11`, `macOS Sonoma 14.5`, `Ubuntu 24.04`)
     validations:
       required: true
-  - type: input
-    attributes:
-      label: Browser (if applicable)
-      description: If the issue is browser-specific, please specify the browser name and version. (e.g., `Chrome 125.0.x`, `Firefox 126.0`, `Safari 17.x`)
   - type: dropdown
     attributes:
       label: Environment
-      description: In which environment did you encounter this bug?
+      description: In which environments did you encounter this bug?
       multiple: true
       options:
-        - Browser
-        - Node.js (version: _____)
-        - Desktop Application (platform: _____)
-        - Mobile Application (iOS version: _____)
-        - Mobile Application (Android version: _____)
-        - Command Line Interface (CLI version: _____)
-        - Other (please specify below)
+        - Command Line Interface
+        - Graphical User Interface
     validations:
       required: true
-  - type: input
-    attributes:
-      label: Other Environment (if selected above)
-      description: Please specify the environment if 'Other' was selected.
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: Detailed Steps to Reproduce
-      description: Provide a numbered list of precise steps that lead to the bug. The more detail, the better! Include any specific actions, inputs, or configurations.
+      description: Provide a numbered list of precise steps that lead to the bug. Include specific actions and inputs.
+      value: |
+        1.
+        2.
+        3.
+        4.
+        5.
+        ...
+      render: bash
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Expected Outcome
-      description: Describe what you expected to happen after performing the steps above.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Actual Outcome
-      description: Describe what actually happened. Please include any error messages, unexpected behavior, or visual anomalies. If possible, provide textual output or attach relevant screenshots/screen recordings.
-    validations:
-      required: true
-  - type: dropdown
-    attributes:
-      label: Severity
-      description: How severe do you consider this bug to be?
-      options:
-        - Critical (renders the product unusable)
-        - Major (significantly impacts functionality)
-        - Minor (cosmetic issue or small inconvenience)
-        - Trivial (very minor issue)
+      label: Outcome
+      description: Describe what actually happened. Please include any error messages, or unexpected behavior descriptions.
     validations:
       required: true
   - type: dropdown
@@ -90,13 +66,18 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Potential Cause (Optional)
+      label: Screenshots (Optional)
+      description: If the bug is visual, please attach (Drag & Drop, or just copy-paste) any relevant screenshots, into this textbox, to help illustrate the issue.
+  - type: textarea
+    attributes:
+      label: Potential Causes / Workarounds / Related Issues (Optional)
       description: If you have any educated guesses or insights into the underlying cause of the bug, please share them here. This can be very helpful!
-  - type: textarea
+  - type: dropdown
     attributes:
-      label: Screenshots/Screen Recordings (Optional)
-      description: If the bug is visual, please attach any relevant screenshots or screen recordings to help illustrate the issue.
-  - type: textarea
-    attributes:
-      label: Additional Context or Workarounds (Optional)
-      description: Include any other relevant information, such as temporary workarounds you've discovered, related issues you've seen, or specific configurations that might be relevant.
+      label: Custom Modifications / Configuration
+      description: Please select the correct statement.
+      options:
+        - I made custom corrections, or improvements, to any code or configuration, before getting the error.
+        - The error occurred, while using the original files, from the current repository.
+    validations:
+      required: true
