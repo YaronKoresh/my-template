@@ -12,12 +12,6 @@ body:
         ---
   - type: textarea
     attributes:
-      label: Title of the Proposal
-      description: Give your improvement or enhancement proposal a concise and descriptive title.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
       label: Current Situation and Problem/Opportunity
       description: Describe the current state of the codebase, architecture, process, or functionality you are proposing to improve or enhance. What are the pain points, limitations, inefficiencies, or opportunities for growth you've identified?
     validations:
@@ -26,12 +20,6 @@ body:
     attributes:
       label: Proposed Improvement/Enhancement
       description: Clearly describe your proposed change. What specific modifications are you suggesting? How would it be different from the current situation? If it involves an external API, please mention it here.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Goals and Benefits
-      description: What are the primary goals of this improvement/enhancement? What are the expected benefits in terms of maintainability, performance, readability, scalability, developer experience, user experience, new features, etc.? Be specific if possible.
     validations:
       required: true
   - type: textarea
@@ -46,19 +34,7 @@ body:
     attributes:
       label: Alternatives Considered (Optional)
       description: Have you considered other ways to achieve this improvement or enhancement, either through internal development or different external services? If so, why is this your preferred approach?
-  - type: dropdown
-    attributes:
-      label: Impact Assessment (Optional)
-      description: How significant do you believe the impact of this improvement/enhancement would be on the project?
-      options:
-        - High (major positive impact, significant improvement/new value)
-        - Medium (noticeable positive impact)
-        - Low (minor but potentially useful improvement)
   - type: textarea
     attributes:
       label: Proposed Steps or Implementation Plan (Optional)
       description: If you have any initial thoughts on how this improvement could be implemented (e.g., high-level steps, specific technologies to use), please share them here.
-  - type: textarea
-    attributes:
-      label: Additional Context or Notes
-      description: Include any other relevant information, context, or notes that might help in understanding or evaluating your proposal.
