@@ -24,12 +24,14 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: Environment
-      description: In which environments did you encounter this bug?
+      label: UI (User Interfaces)
+      description: In which UI did you encounter this bug?
       multiple: true
       options:
-        - Command Line Interface
-        - Graphical User Interface
+        - Headless Web Browser
+        - Web Browser GUI
+        - Other CLI (Command Line Interface)
+        - Other GUI (Graphical User Interface)
     validations:
       required: true
   - type: textarea
