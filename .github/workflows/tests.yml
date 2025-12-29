@@ -51,7 +51,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install .[dev] --extra-index-url https://pypi.nvidia.com
+          pip install .[dev]
 
       - name: Run tests
         env:
